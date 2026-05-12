@@ -30,6 +30,9 @@ export default function Nav() {
         <ul className={`nav__links${menuOpen ? ' nav__links--open' : ''}`}>
           <li><Link to="/" className={location.pathname === '/' ? 'nav__link--active' : ''} onClick={() => setMenuOpen(false)}>Home</Link></li>
           <li><Link to="/services" className={location.pathname === '/services' ? 'nav__link--active' : ''} onClick={() => setMenuOpen(false)}>Services</Link></li>
+          <li className="nav__links-book">
+            <Link to="/book" className="btn btn--dark nav__links-book-btn" onClick={() => setMenuOpen(false)}>Book a Clean</Link>
+          </li>
         </ul>
 
         <Link to="/book" className="btn btn--outline nav__cta" onClick={() => setMenuOpen(false)}>
