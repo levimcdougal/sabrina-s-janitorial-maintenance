@@ -60,7 +60,7 @@ function ServicesHero() {
         </h1>
         <p className="hero__sub">
           From a single deep clean to ongoing care — homes, offices,
-          move-ins and move-outs across Mexico City and the surrounding region.
+          move-ins and move-outs across Greensboro, NC and Richmond, VA.
         </p>
       </div>
     </section>

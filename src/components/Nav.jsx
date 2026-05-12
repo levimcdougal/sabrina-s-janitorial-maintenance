@@ -23,6 +23,10 @@ export default function Nav() {
     <nav className={`nav${solid ? ' nav--scrolled' : ''}`}>
       <div className="nav__inner">
 
+        <Link to="/" className="nav__wordmark" onClick={() => setMenuOpen(false)}>
+          <span className="nav__wordmark--accent">Sabrina's</span> Janitorial Maintenance
+        </Link>
+
         <ul className={`nav__links${menuOpen ? ' nav__links--open' : ''}`}>
           <li><Link to="/" className={location.pathname === '/' ? 'nav__link--active' : ''} onClick={() => setMenuOpen(false)}>Home</Link></li>
           <li><Link to="/services" className={location.pathname === '/services' ? 'nav__link--active' : ''} onClick={() => setMenuOpen(false)}>Services</Link></li>

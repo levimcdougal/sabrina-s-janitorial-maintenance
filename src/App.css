@@ -164,6 +164,24 @@
   align-items: center;
   gap: 2rem;
 }
+.nav__wordmark {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--charcoal);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-right: auto;
+  transition: opacity var(--transition);
+}
+.nav__wordmark:hover {
+  opacity: 0.8;
+}
+.nav__wordmark--accent {
+  color: var(--sage);
+}
 .nav__logo {
   display: flex;
   align-items: center;
@@ -244,6 +262,12 @@
 @media (max-width: 768px) {
   .nav__burger { display: flex; }
   .nav__cta { display: none; }
+  .nav__wordmark {
+    font-size: 0.85rem;
+    white-space: normal;
+    line-height: 1.2;
+    max-width: 160px;
+  }
   .nav__links {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -347,8 +371,31 @@
   line-height: 1.4;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    gap: 2rem;
+  }
+  .hero__img img {
+    height: 280px;
+  }
+  .hero__content {
+    align-items: center;
+    text-align: center;
+  }
+  .hero__sub {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero__actions {
+    justify-content: center;
+  }
+}
 @media (max-width: 480px) {
   .hero__badge { display: none; }
+  .hero__headline { font-size: 2.6rem; }
 }
 
 /* ─── PHILOSOPHY ──────────────────────────────────────── */
@@ -903,6 +950,15 @@
   padding-top: 1.5rem;
   border-top: 1px solid rgba(255,255,255,0.08);
 }
+@media (max-width: 600px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer__nav { text-align: center; }
+  .footer__links { align-items: center; }
+  .footer__contact { text-align: center; }
+}
 
 /* ─── HOME: CTA STRIP ─────────────────────────────────── */
 .cta-strip {
@@ -929,6 +985,14 @@
   flex-shrink: 0;
   padding: 1rem 2.5rem;
   font-size: 0.9rem;
+}
+@media (max-width: 480px) {
+  .cta-strip__btn { width: 100%; justify-content: center; }
+  .book-hero__badges { gap: 0.5rem; }
+  .book-badge { font-size: 0.65rem; padding: 0.35rem 0.75rem; }
+  .book-calendar__embed { border-radius: 0; }
+  .hours__day, .hours__time { font-size: 0.85rem; }
+  .section-title { font-size: clamp(1.75rem, 7vw, 2.5rem); }
 }
 
 /* ─── ADD-ONS ─────────────────────────────────────────── */
