@@ -498,19 +498,14 @@
 @media (max-width: 768px) {
   .philosophy__inner {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
   .philosophy__images {
-    height: 180px;
+    height: 200px;
   }
-}
-@media (max-width: 480px) {
-  .philosophy__images {
-    grid-template-columns: 1fr;
-    height: auto;
+  .philosophy__img-stack {
+    height: 200px;
   }
-  .philosophy__img-wrap--tall { height: 240px; }
-  .philosophy__img-stack { flex-direction: row; }
-  .philosophy__img-stack .philosophy__img-wrap { height: 180px; }
 }
 
 /* ─── SERVICES ────────────────────────────────────────── */
